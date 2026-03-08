@@ -3,11 +3,23 @@ background: #020617;
   padding:70px;
   color:white;
 }
-
+.line{
+width:140px;
+height:1px;
+margin:10px 0 30px;
+background: linear-gradient(
+to right,
+rgba(255,139,11,0) 0%,
+rgba(255,139,11,0.4) 25%,
+rgba(255,139,11,1) 50%,
+rgba(255,139,11,0.4) 75%,
+rgba(255,139,11,0) 100%
+);
+}
 .title{
   font-size:40px;
   font-weight:700;
-  margin-bottom:50px;
+  margin-bottom:20px;
 }
 
 .title span{

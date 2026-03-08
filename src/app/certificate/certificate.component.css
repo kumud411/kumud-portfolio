@@ -3,7 +3,19 @@
   padding:30px 0;
   color:white;
 }
-
+.line{
+width:140px;
+height:1px;
+margin:10px 0 30px;
+background: linear-gradient(
+to right,
+rgba(255,139,11,0) 0%,
+rgba(255,139,11,0.4) 25%,
+rgba(255,139,11,1) 50%,
+rgba(255,139,11,0.4) 75%,
+rgba(255,139,11,0) 100%
+);
+}
 .container{
   width:90%;
   margin:auto;
@@ -13,7 +25,7 @@
   font-size:40px;
   font-weight:700;
   color:#ff9f2a;
-  margin-bottom:40px;
+  margin-bottom:20px;
 }
 
 /* grid layout */
@@ -136,6 +148,8 @@ background: rgba(255, 140, 26, 0.2);
 
 .title{
   font-size:28px;
+    text-align: left;
+margin-left: 0;
 }
 
 .cert-card{

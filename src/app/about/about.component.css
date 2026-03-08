@@ -29,10 +29,22 @@ color:#ff8b0b;
 /* LINE */
 
 .line{
-width:60px;
+width:clamp(80px, 15vw, 140px); /* responsive width */
 height:3px;
-background:#ff8b0b;
-margin:15px 0 30px;
+margin:15px 0 30px 0;
+display:block;
+
+background: linear-gradient(
+to right,
+rgba(255,139,11,0) 0%,
+rgba(255,139,11,1) 50%,
+rgba(255,139,11,0) 100%
+);
+}
+
+/* Ensure it stays left on small screens */
+.about-text{
+text-align:left;
 }
 
 /* TEXT */
@@ -48,8 +60,9 @@ font-size:16px;
 
 .about-cards{
 display:grid;
-grid-template-columns:1fr 1fr;
+grid-template-columns:repeat(auto-fit, minmax(220px, 220px));
 gap:25px;
+justify-content:start;
 }
 
 /* CARD */
@@ -124,6 +137,97 @@ margin-bottom:30px;
 .about-cards{
 grid-template-columns:1fr 1fr;
 gap:20px;
+}
+
+}
+
+
+/* ================= 1024px (Small Laptop) ================= */
+
+@media (max-width:1024px){
+
+.about-section{
+padding:60px 6%;
+}
+
+.about-text h2{
+font-size:40px;
+}
+
+.about-container{
+gap:40px;
+}
+
+}
+
+
+/* ================= 768px (Tablet) ================= */
+
+@media (max-width:768px){
+
+.about-container{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+.about-text h2{
+font-size:34px;
+}
+
+.about-text p{
+font-size:15px;
+}
+
+.about-cards{
+grid-template-columns:1fr 1fr;
+gap:18px;
+}
+
+.card{
+padding:22px;
+}
+
+}
+
+
+/* ================= 480px (Mobile) ================= */
+
+@media (max-width:480px){
+
+.about-section{
+padding:50px 20px;
+}
+
+.about-text h2{
+font-size:28px;
+  /* text-align: left; */
+
+}
+
+.about-text p{
+font-size:14px;
+line-height:1.6;
+}
+
+.about-cards{
+justify-content: center;
+}
+
+.card{
+padding:20px;
+}
+
+.icon{
+width:40px;
+height:40px;
+}
+
+.about-text{
+text-align:left;
+}
+
+.line{
+margin-left:0;
 }
 
 }
