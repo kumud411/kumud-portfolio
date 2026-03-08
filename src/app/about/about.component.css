@@ -30,7 +30,7 @@ color:#ff8b0b;
 
 .line{
 width:clamp(80px, 15vw, 140px); /* responsive width */
-height:3px;
+height:1px;
 margin:15px 0 30px 0;
 display:block;
 
