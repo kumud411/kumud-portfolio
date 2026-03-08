@@ -1,0 +1,27 @@
+<section class="education-section">
+
+  <div class="container">
+
+    <h2 class="title">Education</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item" *ngFor="let edu of education">
+
+        <div class="timeline-dot"></div>
+
+        <div class="education-card">
+          <h3>{{edu.title}}</h3>
+
+          <p class="college">{{edu.institute}}</p>
+
+          <span class="marks">{{edu.marks}}</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,129 @@
+.about-section{
+min-height:80vh;
+background: radial-gradient(circle at top,#030f20,#020617);
+color:white;
+padding:70px 8%;
+}
+
+/* CONTAINER */
+
+.about-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+/* TITLE */
+
+.about-text h2{
+font-size:48px;
+font-weight:800;
+margin-bottom:10px;
+}
+
+.about-text span{
+color:#ff8b0b;
+}
+
+/* LINE */
+
+.line{
+width:60px;
+height:3px;
+background:#ff8b0b;
+margin:15px 0 30px;
+}
+
+/* TEXT */
+
+.about-text p{
+color:#94a3b8;
+line-height:1.8;
+margin-bottom:20px;
+font-size:16px;
+}
+
+/* CARDS GRID */
+
+.about-cards{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+}
+
+/* CARD */
+
+.card{
+background:rgba(255,255,255,0.03);
+padding:30px;
+border-radius:14px;
+border:1px solid rgba(255,255,255,0.05);
+transition:0.3s;
+}
+
+/* ICON */
+
+.icon{
+width:50px;
+height:50px;
+background:rgba(255,139,11,0.1);
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.icon i{
+font-size:22px;
+color:#ff8b0b;
+}
+
+/* TITLE */
+
+.card h3{
+font-size:18px;
+margin-bottom:5px;
+}
+
+/* DESC */
+
+.card p{
+font-size:14px;
+color:#94a3b8;
+}
+
+/* HOVER EFFECT */
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 30px rgba(170, 134, 16, 0.4);
+border-color:#ff8b0b;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.about-container{
+grid-template-columns:1fr;
+}
+
+.about-text{
+text-align:left;
+}
+
+.line{
+margin:auto;
+margin-bottom:30px;
+}
+
+/* CARDS 2 PER ROW */
+
+.about-cards{
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+}

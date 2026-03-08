@@ -1,0 +1,175 @@
+.experience-section{
+  background:#020617;
+  padding:80px;
+  color:white;
+}
+
+.title{
+  font-size:42px;
+  font-weight:700;
+  margin-bottom:60px;
+}
+
+.title span{
+  color:#ff9f2a;
+}
+
+.timeline{
+  position:relative;
+  padding-left:40px;
+}
+
+/* FULL HEIGHT TIMELINE */
+
+.timeline::before{
+  content:'';
+  position:absolute;
+  left:8px;
+  top:0;
+  width:1px;   /* thin line */
+
+  height:100%;
+
+  background: linear-gradient(
+      to bottom,
+      rgba(255,159,42,1) 0%,
+      rgba(255,159,42,0.8) 40%,
+      rgba(255,159,42,0.4) 70%,
+      rgba(255,159,42,0) 100%
+  );
+}
+
+.experience-container{
+  position:relative;
+  margin-bottom:10px;
+}
+
+/* GLOW DOT */
+
+.timeline-dot{
+  position:absolute;
+  left:-35px;
+  top:20px;
+  width:8px;
+  height:8px;
+  background:#ff9f2a;
+  border-radius:50%;
+  box-shadow:
+      0 0 5px #ff9f2a,
+      0 0 10px #ff9f2a,
+      0 0 20px #ff9f2a;
+}
+
+/* CARD */
+
+.experience-card{
+background:rgba(255,255,255,0.03);
+  padding:30px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.08);
+  width:50%;
+}
+.experience-card:hover{
+    transform:translateY(-5px);
+box-shadow:0 10px 30px rgba(170, 134, 16, 0.4);
+/* border-color:#ff8b0b; */
+}
+.header{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.badge{
+  background:rgba(255,159,42,0.15);
+  color:#ff9f2a;
+  padding:4px 12px;
+  border-radius:20px;
+  font-size:13px;
+}
+
+.company{
+  margin-top:8px;
+  margin-bottom:18px;
+  color:#9bb3d1;
+}
+
+ul{
+  list-style:none;
+  padding:0;
+}
+
+li{
+  margin-bottom:10px;
+  color:#b9c7db;
+}
+
+/* TABLET */
+
+@media (max-width:992px){
+
+.experience-section{
+padding:60px 30px;
+}
+
+.title{
+font-size:36px;
+text-align:center;
+}
+
+.experience-card{
+width:70%;
+}
+
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.timeline{
+padding-left:25px;
+}
+
+.timeline::before{
+left:5px;
+}
+
+.timeline-dot{
+left:-22px;
+}
+
+.experience-card{
+width:100%;
+padding:20px;
+}
+
+.header{
+flex-direction:column;
+align-items:flex-start;
+gap:5px;
+}
+
+}
+
+/* SMALL MOBILE */
+
+@media (max-width:480px){
+
+.experience-section{
+padding:50px 20px;
+}
+
+.title{
+font-size:30px;
+}
+
+.experience-card{
+padding:18px;
+}
+
+li{
+font-size:14px;
+}
+
+}

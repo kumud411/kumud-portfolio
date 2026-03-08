@@ -1,0 +1,66 @@
+<section class="contact-section">
+
+  <div class="container">
+
+    <h2 class="title">Get In <span>Touch</span></h2>
+
+    <p class="subtitle">
+      I'm always open to discussing new projects, opportunities, or collaborations.
+      Feel free to reach out through any of the channels below.
+    </p>
+
+    <div class="contact-grid">
+
+      <!-- Left Contact Info -->
+      <div class="contact-info">
+
+        <div class="info-card" *ngFor="let item of contacts">
+
+          <div class="icon">
+            <i [class]="item.icon"></i>
+          </div>
+
+          <div>
+            <p class="label">{{item.label}}</p>
+            <h4>{{item.value}}</h4>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Right Connect Card -->
+      <div class="connect-card">
+
+        <h3>Let's Connect!</h3>
+
+        <p>
+          Open to discussing new projects, creative ideas,
+          or opportunities to be part of your vision.
+        </p>
+
+      <div class="connect-icons">
+
+  <a href="https://www.linkedin.com/in/kumudpatil/" target="_blank" class="social-box">
+    <i class="bi bi-linkedin"></i>
+  </a>
+
+  <a href="https://github.com/kumud411" target="_blank" class="social-box">
+    <i class="bi bi-github"></i>
+  </a>
+
+</div>
+
+
+       
+
+      </div>
+
+    </div>
+      </div>
+</section>
+
+<footer class="footer">
+     <div class="footer-container"> <div class="logo">Kumud</div> <div class="social-icons"> <i class="bi bi-github"></i> <i class="bi bi-linkedin"></i> <i class="bi bi-envelope"></i> </div> <p>© 2026 Built with 🧡 by Kumud Patil</p> </div> </footer>
+
