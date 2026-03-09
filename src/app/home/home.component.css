@@ -238,11 +238,12 @@ padding-top:20px;
 .hero-container{
 grid-template-columns:1fr;
 text-align:center;
-gap:50px;
+gap:30px;
 }
 
 .hero-text h1{
 font-size:46px;
+margin-bottom: 10px;
 }
 
 .hero-text h2{
@@ -250,7 +251,7 @@ font-size:20px;
 }
 
 .description{
-margin:auto;
+margin-bottom: 5px;
 }
 
 .buttons{
